@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<script type="text/javascript">
+	
+		function sprawdz()
+		{
+			var liczba = document.getElementById("pole").value;
+			
+			if (liczba==3) document.getElementById("wynik").innerHTML="Prawidłowa odpowiedź!";
+		
+			else document.getElementById("wynik").innerHTML="Spróbuj jeszcze raz :(";
+		
+		}
+	function sprawd()
+		{
+			var liczba = document.getElementById("pol").value;
+			
+			if (liczba==9) document.getElementById("wynik1").innerHTML="Dobrze!";
+		
+			else document.getElementById("wynik1").innerHTML="Nie tym razem :(";
+		
+		}
+	function sprawdz1()
+		{
+			var liczba = document.getElementById("pole1").value;
+			
+			if (liczba==6) document.getElementById("wynik2").innerHTML="OBy tak dalej!";
+		
+			else document.getElementById("wynik2").innerHTML="Niestety :(";
+		
+		}
+		function sprawdz2()
+		{
+			var liczba = document.getElementById("pole2").value;
+			
+			if (liczba=="jutro") document.getElementById("wynik3").innerHTML="Super!";
+		
+			else document.getElementById("wynik3").innerHTML="Próbuj dalej :(";
+		
+		}
+		function sprawdz3()
+		{
+			var liczba = document.getElementById("pole3").value;
+			
+			if (liczba== 50) document.getElementById("wynik4").innerHTML="Prawidłowa odpowiedź!";
+		
+			else document.getElementById("wynik4").innerHTML="Spróbuj jeszcze raz :(";
+		
+		}
+	</script>
+</head>
+
+<body background="li.JPG";">
+<font color="white">
+<h1 style="text-align: center; ">Zagadki</h1>
+<p >
+<h2>Zagadka nr 1</h2>
+<h3>Szły gęsi gęsiego – jedna za drugą. Ile było gęsi?</h3>
+	<input type="text" id="pole" />
+	<input type="image" src="lupa.PNG" value onclick="sprawdz()"/>
+	<div id="wynik"></div>
+	</p>
+<p style="padding:5px; ">
+<h2>Zagadka nr 2</h2>
+<h3>Jeśli dwa to towarzystwo, a trzy to tłum, to ile to cztery i pięć?</h3>
+<input type="text" id="pol" />
+	<input type="image" src="lupa.PNG" value onclick="sprawd()"/>
+	<div id="wynik1"></div>
+	</p>
+	<p style="padding:5px; ">
+<h2>Zagadka nr 3</h2>
+<h3>Winda może pomieścić nie więcej niż 6 osób dorosłych lub nie więcej niż 9 dzieci.</h3>
+<h3>Jaka jest maksymalna liczba dzieci, które mogą dostać się do windy z 2 osobami dorosłymi?</h3>
+<input type="text" id="pole1" />
+	<input type="image" src="lupa.PNG" value onclick="sprawdz1()"/>
+	<div id="wynik2"></div>
+	</p>
+	<p style="padding:5px; ">
+	<h2>Zagadka nr 4</h2>
+<h3>Zawsze przyjdzie, ale nigdy nie przyjdzie dzisiaj. Co to takiego? </h3>
+
+<input type="text" id="pole2" />
+	<input type="image" src="lupa.PNG" value onclick="sprawdz2()"/>
+	<div id="wynik3"></div>
+	</p>
+	<p style="padding:5px; ">
+	<h2>Zagadka nr 5</h2>
+<h3>Przy dwóch rękach masz 10 palców. Ile palców jest u 10-ciu rąk?  </h3>
+
+<input type="text" id="pole3" />
+	<input type="image" src="lupa.PNG" value onclick="sprawdz3()"/>
+	<div id="wynik4"></div>
+	</p>
+	</font>
+</body>
+
+</html>
